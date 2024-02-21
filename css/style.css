@@ -193,11 +193,22 @@ div#myNavbar {
 /*-- /navbar --*/
 
 /*-- banner --*/
-.banner-agile {
-    background: url(../images/banner.jpeg) no-repeat 0px -150px;
+.banner-agile-wrap {
+    display: flex;
+}
+.banner-agile-left {
+    flex: 1;
+    background: url(../images/pill.jpg) no-repeat 0px -100px;
     background-size: cover;
-    min-height: 690px;
-    padding-top: 50px;
+    min-height: 400px;
+    margin-top: 80px;
+}
+.banner-agile-right {
+    flex: 1;
+    background: url(../images/equipment.jpeg) no-repeat 0px -100px;
+    background-size: cover;
+    min-height: 400px;
+    margin-top: 80px;
 }
 
 .banner-text-agileinfo {
@@ -251,7 +262,7 @@ p.top-p {
 }
 
 .about-left {
-    background: url(../images/about.jpeg) no-repeat 0px 0px;
+    background: url(../images/about-me.jpeg) no-repeat 0px 0px;
     background-size: cover;
     min-height: 400px;
 }
@@ -259,7 +270,7 @@ p.top-p {
 .about-right {
     padding: 55.5px;
     background: #6c9bea;
-    height: 415px;
+    height: 400px;
 }
 
 .about-right p {
@@ -491,6 +502,7 @@ img.zoom-img {
     border-radius: 4px;
     max-width: 255px;
     height: 191px;
+    object-fit: cover;
 }
 
 img.zoom-img:hover {
@@ -650,6 +662,7 @@ ul.social-icons li a .fa-linkedin:hover {
     border: 1px solid #000;
     width: 49%;
     outline: none;
+    margin-top: 20px;
 }
 
 input[type="text"] {
@@ -765,16 +778,18 @@ ul.agileits-company-social .fa-google-plus:hover {
 /*-- //to-top --*/
 @media (max-width: 1440px) {
     .about-left {
-        min-height: 415px;
+        min-height: 400px;
+        background: url(../images/about-me.jpeg) no-repeat 0px 0px;
+        background-size: cover;
     }
 
     .about-right {
         padding: 49px;
-        height: 415px;
+        height: 400px;
     }
 
     .about-right:before {
-        border-bottom: 415px solid transparent;
+        border-bottom: 400px solid transparent;
     }
 }
 
@@ -896,13 +911,13 @@ ul.agileits-company-social .fa-google-plus:hover {
     }
 
     .about-right {
-        height: 415px;
+        height: 400px;
     }
 
     .about-left {
-        background: url(../images/about.jpeg) no-repeat 0px -112px;
+        background: url(../images/about-me.jpeg) no-repeat 0px 0px;
         background-size: cover;
-        height: 415px;
+        height: 400px;
     }
 
     .pattern-overlay-2 .row > div {
@@ -1249,7 +1264,7 @@ ul.agileits-company-social .fa-google-plus:hover {
     }
 
     .about-left {
-        background: url(../images/about.jpeg) no-repeat 0px -62px;
+        background: url(../images/about-me.jpeg) no-repeat 0px 0px;
         background-size: cover;
     }
 
@@ -1291,7 +1306,7 @@ ul.agileits-company-social .fa-google-plus:hover {
     }
 
     .about-left {
-        background: url(../images/about.jpeg) no-repeat 0px -47px;
+        background: url(../images/about-me.jpeg) no-repeat 0px 0px;
         background-size: cover;
     }
 
@@ -1306,7 +1321,7 @@ ul.agileits-company-social .fa-google-plus:hover {
 
 @media (max-width: 375px) {
     .about-left {
-        background: url(../images/about.jpeg) no-repeat 0px -40px;
+        background: url(../images/about-me.jpeg) no-repeat 0px 0px;
         background-size: cover;
     }
 }
@@ -1329,7 +1344,7 @@ ul.agileits-company-social .fa-google-plus:hover {
     }
 
     .about-left {
-        background: url(../images/about.jpeg) no-repeat 0px 0px;
+        background: url(../images/about-me.jpeg) no-repeat 0px 0px;
         background-size: cover;
     }
 
@@ -1660,4 +1675,11 @@ header {
     -ms-text-fill-color: transparent;
     -o-text-fill-color: transparent;
     text-fill-color: transparent;
+}
+
+@media (min-width: 1440px) {
+    .about-left {
+        background: url(../images/about-me.jpeg) no-repeat 0px -100px;
+        background-size: cover;
+    }
 }
