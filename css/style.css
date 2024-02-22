@@ -1772,7 +1772,7 @@ header {
   color: #fff;
   background-color: #6c9bea;
   margin-top: 30px;
-  text-wrap: wrap;
+  white-space: normal;
   position: relative;
 }
 
@@ -1792,4 +1792,5 @@ header {
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
+  padding: 0 5px;
 }
